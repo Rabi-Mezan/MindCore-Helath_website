@@ -12,12 +12,8 @@ const useFirebase = () => {
     const googleProvider = new GoogleAuthProvider();
 
     const googleSignIn = () => {
-        signInWithPopup(auth, googleProvider)
-            .then(result => {
-                console.log(result.user)
-                setUser(result.user)
+        return signInWithPopup(auth, googleProvider)
 
-            })
     }
 
     // observe user
@@ -45,6 +41,7 @@ const useFirebase = () => {
 
     return {
         user,
+        setUser,
         googleSignIn,
         logOut
     }
