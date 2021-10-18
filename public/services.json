@@ -40,5 +40,33 @@
         "description": "Residential facilities dedicated to mental health care provide intensive treatment in a safe setting for weeks or months.. ",
         "price": 320,
         "img": "https://i.ibb.co/SdRPKTj/close-up-doctor-kid-wearing-masks-1.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Specialist mental health services",
+        "description": "Residential facilities dedicated to mental health care provide intensive treatment in a safe setting for weeks or months.. ",
+        "price": 500,
+        "img": "https://i.ibb.co/SdRPKTj/close-up-doctor-kid-wearing-masks-1.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Partial Hospitalization",
+        "description": "Residential facilities dedicated to mental health care provide intensive treatment in a safe setting for weeks or months.. ",
+        "price": 150,
+        "img": "https://i.ibb.co/SdRPKTj/close-up-doctor-kid-wearing-masks-1.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Mental health assistance",
+        "description": "Residential facilities dedicated to mental health care provide intensive treatment in a safe setting for weeks or months.. ",
+        "price": 380,
+        "img": "https://i.ibb.co/SdRPKTj/close-up-doctor-kid-wearing-masks-1.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Private Service",
+        "description": "Residential facilities dedicated to mental health care provide intensive treatment in a safe setting for weeks or months.. ",
+        "price": 420,
+        "img": "https://i.ibb.co/SdRPKTj/close-up-doctor-kid-wearing-masks-1.jpg"
     }
 ]
