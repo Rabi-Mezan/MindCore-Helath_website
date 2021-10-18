@@ -3,8 +3,11 @@ import { Link } from 'react-router-dom';
 import logo from '../../../images/mental-health.png'
 import { HashLink } from 'react-router-hash-link';
 import './Header.css'
+import useFirebase from '../../../hooks/useFirebase';
 
 const Header = () => {
+    const { user, logOut } = useFirebase()
+
     return (
         <>
             <header className="text-white body-font navbar" >
@@ -19,13 +22,24 @@ const Header = () => {
                         <Link to='/home' className="mr-5 hover:text-gray-900">Doctors</Link>
                         <Link to='/home' className="mr-5 hover:text-gray-900">Contact</Link>
                     </nav>
-                    <Link to='/login'>
-                        <button className="inline-flex items-center text-yellow-500 bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Login
-                            <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" className="w-4 h-4 ml-1" viewBox="0 0 24 24">
-                                <path d="M5 12h14M12 5l7 7-7 7"></path>
-                            </svg>
-                        </button>
-                    </Link>
+                    {
+                        user.email ?
+                            <div className='flex items-center'>
+                                <p>{user.displayName}</p>
+                                <button onClick={logOut} className="inline-flex items-center text-yellow-500 bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base ml-2 mt-4 md:mt-0">
+                                    Logout
+                                </button>
+                            </div>
+                            :
+                            <Link to='/login'>
+                                <div className='sm:flex flex-row '>
+                                    <button className="inline-flex items-center text-yellow-500 bg-gray-100 border-0 py-1 mr-2 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Sign up
+                                    </button>
+                                    <button className="inline-flex items-center text-yellow-500 bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Login
+                                    </button>
+                                </div>
+                            </Link>
+                    }
                 </div>
             </header >
         </>

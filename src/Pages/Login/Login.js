@@ -1,9 +1,11 @@
 import React from 'react';
+import useFirebase from '../../hooks/useFirebase';
 
 const Login = () => {
+    const { user, googleSignIn, logOut } = useFirebase()
 
     const handleGoogleSignIn = () => {
-
+        googleSignIn();
     }
 
 
