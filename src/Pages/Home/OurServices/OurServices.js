@@ -14,7 +14,7 @@ const OurServices = () => {
         <div className='our-service mt-20' id='services'>
             <div className='p-12'>
                 <h2 className='text-3xl font-bold text-gray-500'>Our Services</h2>
-                <p className='text-sm text-justify mt-2'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam, sunt itaque nesciunt sed blanditiis fugiat ab explicabo pariatur, accusamus, repudiandae doloremque nulla nobis veritatis cum voluptatum sint tenetur harum ullam?</p>
+                <p className='text-sm text-justify mt-2'>If you think that you or someone you know has a mental health problem, there are a number of ways that you can seek advice, information and referral for general and mental health issues in MindCore</p>
             </div>
             <div className='services'>
                 {

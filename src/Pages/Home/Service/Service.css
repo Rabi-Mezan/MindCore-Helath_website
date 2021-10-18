@@ -13,3 +13,15 @@
     transform: scale(1.05);
     transition: transform 1s ease-in-out;
 }
+
+.service-img{
+    overflow: hidden;
+}
+.service img{
+    width: 80%%;
+    transition: 0.8s all ease-in-out;
+}
+
+.service img:hover{
+    transform: scale(1.1);
+}
