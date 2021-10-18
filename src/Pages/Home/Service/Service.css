@@ -1,3 +1,15 @@
-.service{
-    /* padding: 10px; */
+.service-info{
+    border-right: 1px dotted gray;
+}
+
+.service button{
+    background-color: white;
+    border: none;
+    padding: 5px 10px;
+}
+.service button:hover{
+    background-color: #157575  ;
+    color: white;
+    transform: scale(1.05);
+    transition: transform 1s ease-in-out;
 }

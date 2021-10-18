@@ -10,3 +10,15 @@
     grid-row-gap: 20px;
     grid-column-gap: 5px;
 }
+
+
+@media screen and (max-width: 600px){
+   .our-service{
+       text-align: center;
+    grid-template-columns: 1fr;
+   }
+    .services{
+        grid-template-columns: repeat(2,1fr);
+}
+
+}
