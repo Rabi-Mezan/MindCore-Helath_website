@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Special Care",
-        "description": "Good mental health care encompasses a wide range of services beyond simply receiving treatment for a mental health condition.",
+        "description": "Good mental health care encompasses a wide range of services beyond simply receiving treatment for a mental health.",
         "price": 300,
         "img": "https://i.ibb.co/SdRPKTj/close-up-doctor-kid-wearing-masks-1.jpg"
     },
@@ -16,28 +16,28 @@
     {
         "id": 3,
         "name": "Young Mental Care",
-        "description": "Psychologists are mental health professionals that hold a Ph.D. in psychology. They may use the title doctor but are not medical doctors and cannot prescribe medications.",
+        "description": "Psychologists are mental health professionals that hold a Ph.D. in psychology. They may use the title doctor but are not.",
         "price": 350,
         "img": "https://i.ibb.co/SdRPKTj/close-up-doctor-kid-wearing-masks-1.jpg"
     },
     {
         "id": 4,
         "name": "Older Mental Care",
-        "description": "These mental health professionals typically have master’s degrees in psychology and provide therapy.",
+        "description": "These mental health professionals typically have master’s degrees in psychology and provide therapy for mental health.",
         "price": 330,
         "img": "https://i.ibb.co/SdRPKTj/close-up-doctor-kid-wearing-masks-1.jpg"
     },
     {
         "id": 5,
         "name": "COVID-19 Vaccination",
-        "description": "Good mental health care encompasses a wide range of services beyond simply receiving treatment for a mental health condition.",
+        "description": "Good mental health care encompasses a wide range of services beyond simply receiving treatment for a mental .",
         "price": 100,
         "img": "https://i.ibb.co/SdRPKTj/close-up-doctor-kid-wearing-masks-1.jpg"
     },
     {
         "id": 6,
         "name": "Meditation Center",
-        "description": "Residential facilities dedicated to mental health care provide intensive treatment in a safe setting for weeks or months at a time. ",
+        "description": "Residential facilities dedicated to mental health care provide intensive treatment in a safe setting for weeks or months.. ",
         "price": 320,
         "img": "https://i.ibb.co/SdRPKTj/close-up-doctor-kid-wearing-masks-1.jpg"
     }
