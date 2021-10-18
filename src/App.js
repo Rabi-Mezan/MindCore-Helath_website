@@ -8,6 +8,7 @@ import Header from './Pages/Home/Header/Header';
 // import Header from './Pages/Home/Header/Header';
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login';
+import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
 import Services from './Pages/Services/Services';
 
@@ -27,12 +28,12 @@ function App() {
             <Route path='/login'>
               <Login></Login>
             </Route>
-            <Route path='/details/:serviceId'>
+            <PrivateRoute path='/details/:serviceId'>
               <ServiceDetails></ServiceDetails>
-            </Route>
-            <Route to='/services'>
+            </PrivateRoute>
+            <PrivateRoute to='/services'>
               <Services></Services>
-            </Route>
+            </PrivateRoute>
           </Switch>
           <Footer></Footer>
         </BrowserRouter>
