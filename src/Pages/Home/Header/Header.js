@@ -1,12 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../../../images/mental-health.png'
-import { HashLink } from 'react-router-hash-link';
 import './Header.css'
-import useFirebase from '../../../hooks/useFirebase';
+import useAuth from '../../../hooks/useAuth';
 
 const Header = () => {
-    const { user, logOut } = useFirebase()
+    const { user, logOut } = useAuth();
 
     return (
         <>
