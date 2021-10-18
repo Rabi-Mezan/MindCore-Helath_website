@@ -1,0 +1,59 @@
+.banner{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    place-content: center;
+    height: 90vh;
+    /* background-image: Url('../../../images/5740402-ai.jpg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-text{
+    margin-left: 40px;
+    display: grid;
+    place-content: center;
+    font-family: 'Poppins', sans-serif;
+}
+.banner-text h1{
+    color: #ffa700;
+    font-weight: 900;
+}
+.banner-menu{
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.banner-menu .banner-menu-item{
+    display: flex;
+    color: white;
+    font-size: 15px;
+    background-color:#157575 ;
+    align-items: center;
+    justify-content: space-around;
+   padding: 8px ;
+   margin: 10px 15px;
+   height: 3.5rem;
+   border-radius: 10px;
+}
+.banner-menu-item:hover{
+    transform: scale(1.05);
+    transition: transform 1s ease-in-out;
+}
+
+.banner-menu-item p>i{
+    background-color: 	#ffa700;
+    padding: 10px;
+    border-radius: 25px;
+}
+
+@media screen and (max-width: 600px) {
+    .banner{
+        grid-template-columns: 1fr;
+    }
+
+    .banner-text{
+        margin-bottom: 15px;
+    }
+    
+}
