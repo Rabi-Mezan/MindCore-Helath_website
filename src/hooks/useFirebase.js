@@ -7,11 +7,13 @@ initAuth()
 const useFirebase = () => {
 
     const [user, setUser] = useState({})
+    const [isLoading, setIsLoading] = useState(true);
 
     const auth = getAuth()
     const googleProvider = new GoogleAuthProvider();
 
     const googleSignIn = () => {
+        setIsLoading(true);
         return signInWithPopup(auth, googleProvider)
 
     }
@@ -25,6 +27,7 @@ const useFirebase = () => {
             else {
                 setUser({})
             }
+            setIsLoading(false);
 
         })
 
@@ -42,6 +45,8 @@ const useFirebase = () => {
     return {
         user,
         setUser,
+        isLoading,
+        setIsLoading,
         googleSignIn,
         logOut
     }

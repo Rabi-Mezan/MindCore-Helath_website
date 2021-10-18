@@ -4,7 +4,7 @@ import useAuth from '../../hooks/useAuth';
 
 
 const Login = () => {
-    const { user, setUser, googleSignIn, logOut } = useAuth();
+    const { user, isLoading, setIsLoading, setUser, googleSignIn, logOut } = useAuth();
     const history = useHistory();
     const location = useLocation();
     const redirectUrl = location.state?.from;
@@ -15,6 +15,9 @@ const Login = () => {
                 history.push(redirectUrl)
                 setUser(result.user)
 
+            })
+            .finally(() => {
+                setIsLoading(false)
             })
     }
 
