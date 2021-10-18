@@ -2,6 +2,7 @@
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Authprovider from './AuthProvider/Authprovider';
+import Doctors from './Pages/Doctors/Doctors';
 
 import Footer from './Pages/Home/Footer/Footer';
 import Header from './Pages/Home/Header/Header';
@@ -28,12 +29,16 @@ function App() {
             <Route path='/login'>
               <Login></Login>
             </Route>
+            <Route path='/doctors'>
+              <Doctors></Doctors>
+            </Route>
             <PrivateRoute path='/details/:serviceId'>
               <ServiceDetails></ServiceDetails>
             </PrivateRoute>
             <PrivateRoute to='/services'>
               <Services></Services>
             </PrivateRoute>
+
           </Switch>
           <Footer></Footer>
         </BrowserRouter>

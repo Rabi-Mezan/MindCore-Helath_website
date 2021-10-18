@@ -18,7 +18,7 @@ const Header = () => {
                     <nav className="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400	flex flex-wrap items-center text-base justify-center">
                         <Link to='/home' className="mr-5 hover:text-gray-900">Home</Link>
                         <Link to='/services' className="mr-5 hover:text-gray-900">Services</Link>
-                        <Link to='/home' className="mr-5 hover:text-gray-900">Doctors</Link>
+                        <Link to='/doctors' className="mr-5 hover:text-gray-900">Doctors</Link>
                         <Link to='/home' className="mr-5 hover:text-gray-900">Contact</Link>
                     </nav>
                     {

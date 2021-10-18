@@ -12,7 +12,7 @@ const Login = () => {
     const handleGoogleSignIn = () => {
         googleSignIn()
             .then(result => {
-                history.push('/services')
+                history.push(redirectUrl)
                 setUser(result.user)
 
             })
