@@ -7,7 +7,6 @@ import OurServices from '../OurServices/OurServices';
 const Home = () => {
     return (
         <div>
-            <Header></Header>
             <Banner></Banner>
             <OurServices></OurServices>
         </div>
