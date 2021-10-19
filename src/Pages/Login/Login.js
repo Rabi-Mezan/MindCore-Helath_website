@@ -1,14 +1,49 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useHistory, useLocation } from 'react-router';
 import useAuth from '../../hooks/useAuth';
 
 
 const Login = () => {
-    const { user, isLoading, setIsLoading, setUser, googleSignIn, logOut } = useAuth();
+    const { user, isLoading, setIsLoading, setUser, googleSignIn, createNewuser, userLogin, setUsername, logOut } = useAuth();
+    const [isLogin, setIslogin] = useState(false);
+    const [name, setname] = useState('');
+    const [email, setEmail] = useState('');
+    const [password, setPassword] = useState('');
+
+
+    const handleName = (e) => {
+        setname(e.target.value)
+    }
+    const handleEmail = (e) => {
+        setEmail(e.target.value)
+    }
+
+    const handlePassword = (e) => {
+        setPassword(e.target.value);
+    }
+
+
+
+    const toogleCheckBox = (e) => {
+        setIslogin(e.target.checked);
+        console.log(e.target.checked)
+    }
     const history = useHistory();
     const location = useLocation();
     const redirectUrl = location.state?.from;
 
+    //   email password registration and login  
+
+    const handleRegister = (e) => {
+        e.preventDefault();
+
+        isLogin ? userLogin(email, password) : createNewuser(name, email, password)
+
+    }
+
+
+
+    // google sign in
     const handleGoogleSignIn = () => {
         googleSignIn()
             .then(result => {
@@ -25,28 +60,33 @@ const Login = () => {
     return (
         <div class="max-w-sm mx-auto rounded shadow-lg md:max-w-md my-10 p-6 pb-10 bg-gray-100">
             <div class=" flex justify-center border-b border-gray-300">
-                <h1 class="font-bold text-lg text-gray-400 pb-1">Register Here</h1>
+                <h1 class="font-bold text-lg text-gray-400 pb-1">Please {isLogin ? 'Login' : 'Register'} Here</h1>
             </div>
             <div class=" pt-6">
-                <form class=" text-center">
-                    <input type="text" name="displayname" class="block border p-2 bg-white w-full h-10 focus:outline-none focus:border-blue-400 rounded text-sm placeholder-gray-600 placeholder-opacity-40 text-gray-600" placeholder="Display name*" />
+                <form onSubmit={handleRegister} class=" text-center">
+                    {
+                        !isLogin && <input onChange={handleName} type="text" name="displayname" class="block border p-2 bg-white w-full h-10 focus:outline-none focus:border-blue-400 rounded text-sm placeholder-gray-600 placeholder-opacity-40 text-gray-600" placeholder="Display name*" />
 
-                    <input type="email" name="usermail" class="block border p-2 bg-white w-full h-10 focus:outline-none focus:border-blue-400 rounded text-sm placeholder-gray-600 placeholder-opacity-40 mt-2 text-gray-600" placeholder="E-mail*" />
+                    }
+                    <input onChange={handleEmail} type="email" name="usermail" class="block border p-2 bg-white w-full h-10 focus:outline-none focus:border-blue-400 rounded text-sm placeholder-gray-600 placeholder-opacity-40 mt-2 text-gray-600" placeholder="E-mail*" />
 
-                    <input type="password" name="userpass" class="block border p-2 bg-white w-full h-10 focus:outline-none focus:border-blue-400 rounded text-sm placeholder-gray-600 placeholder-opacity-40 mt-2 text-gray-600" placeholder="Password*" />
+                    <input onChange={handlePassword} type="password" name="userpass" class="block border p-2 bg-white w-full h-10 focus:outline-none focus:border-blue-400 rounded text-sm placeholder-gray-600 placeholder-opacity-40 mt-2 text-gray-600" placeholder="Password*" />
 
-                    <input type="password" name="confirmpass" class="block border p-2 bg-white w-full h-10 focus:outline-none focus:border-blue-400 rounded text-sm placeholder-gray-600 placeholder-opacity-40 mt-2 text-gray-600" placeholder="Confirm password*" />
+                    {
+                        !isLogin &&
+                        <input type="password" name="confirmpass" class="block border p-2 bg-white w-full h-10 focus:outline-none focus:border-blue-400 rounded text-sm placeholder-gray-600 placeholder-opacity-40 mt-2 text-gray-600" placeholder="Confirm password*" />
+                    }
 
                     <div class="flex justify-center">
 
                     </div>
-                    <button type="submit" class="w-80 h-9 bg-blue-500 text-sm font-semibold mt-3 rounded-sm text-gray-100 focus:outline-none hover:bg-blue-600">Register
+                    <button onClick={() => createNewuser(email, password)} type="submit" class="w-80 h-9 bg-blue-500 text-sm font-semibold mt-3 rounded-sm text-gray-100 focus:outline-none hover:bg-blue-600"> {isLogin ? 'Login' : 'Register'}
                     </button>
                 </form>
             </div>
             <div class="pt-3 text-center flex justify-center items-center mt-4">
                 <span>
-                    <input className='' type="checkbox" name="" id="" />
+                    <input onChange={toogleCheckBox} className='' type="checkbox" name="" id="" />
                 </span>
                 <span class="text-gray-600 text-xs w-2/3">Already have an account?
 

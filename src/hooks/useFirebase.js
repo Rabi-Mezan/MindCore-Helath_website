@@ -1,5 +1,6 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, signOut } from "firebase/auth";
-import { useEffect, useState } from "react/cjs/react.development";
+import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile, sendEmailVerification, signOut } from "firebase/auth";
+import { useEffect, useState } from "react";
+
 import initAuth from "../firebase/firebase.init"
 
 
@@ -8,10 +9,52 @@ const useFirebase = () => {
 
     const [user, setUser] = useState({})
     const [isLoading, setIsLoading] = useState(true);
+    const [error, setError] = useState('')
 
     const auth = getAuth()
     const googleProvider = new GoogleAuthProvider();
 
+
+    //creating new user and  sign in using email password
+
+    const createNewuser = (name, email, password) => {
+        // console.log(email, password);
+        createUserWithEmailAndPassword(auth, email, password)
+            .then(result => {
+                console.log(result.user);
+                setUsername(name);
+                verifyEmail(result.user);
+            })
+            .catch(error => {
+                setError(error.message)
+            })
+    }
+
+    const userLogin = (email, password) => {
+        signInWithEmailAndPassword(auth, email, password)
+            .then(result => {
+                console.log(result.user)
+            })
+            .catch(error => {
+                setError(error.message)
+            })
+    }
+
+    // set username
+    const setUsername = (name) => {
+        updateProfile(auth.currentUser,
+            { displayName: name })
+            .then(result => { })
+    }
+
+    const verifyEmail = () => {
+        sendEmailVerification(auth.currentUser)
+            .then(result => {
+
+            })
+    }
+
+    // sign in using google
     const googleSignIn = () => {
         setIsLoading(true);
         return signInWithPopup(auth, googleProvider)
@@ -46,7 +89,11 @@ const useFirebase = () => {
         user,
         setUser,
         isLoading,
+        setError,
         setIsLoading,
+        createNewuser,
+        userLogin,
+        setUsername,
         googleSignIn,
         logOut
     }
