@@ -9,6 +9,7 @@ import Header from './Pages/Home/Header/Header';
 // import Header from './Pages/Home/Header/Header';
 import Home from './Pages/Home/Home/Home';
 import Login from './Pages/Login/Login';
+import NotFound from './Pages/NotFound/NotFound';
 import PrivateRoute from './Pages/PrivateRoute/PrivateRoute';
 import ServiceDetails from './Pages/ServiceDetails/ServiceDetails';
 import Services from './Pages/Services/Services';
@@ -26,19 +27,21 @@ function App() {
             <Route exact path='/home'>
               <Home></Home>
             </Route>
-            <Route path='/login'>
+            <Route exact path='/login'>
               <Login></Login>
             </Route>
-            <Route path='/doctors'>
+            <Route exact path='/doctors'>
               <Doctors></Doctors>
             </Route>
-            <PrivateRoute path='/details/:serviceId'>
+            <PrivateRoute exact path='/details/:serviceId'>
               <ServiceDetails></ServiceDetails>
             </PrivateRoute>
-            <PrivateRoute to='/services'>
+            <PrivateRoute exact path='/services'>
               <Services></Services>
             </PrivateRoute>
-
+            <Route exact path='*'>
+              <NotFound></NotFound>
+            </Route>
           </Switch>
           <Footer></Footer>
         </BrowserRouter>
