@@ -1,5 +1,6 @@
 import React from 'react';
 import './Banner.css'
+import { HashLink } from 'react-router-hash-link';
 
 
 const Banner = () => {
@@ -11,21 +12,27 @@ const Banner = () => {
                 <p className='text-xs'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad reiciendis rerum recusandae minima debitis hic nulla tempora, saepe totam nihil.</p>
             </div>
 
-            <div className='banner-menu'>
-                <div className='banner-menu-item'>
-                    <p className='flex items-center'><i className="fas fa-address-book mr-4"></i> Appointment</p>
-                    <span> <i className="fas fa-angle-double-right"></i></span>
-                </div>
-                <div className='banner-menu-item'>
-                    <p className='flex items-center'><i className="fas fa-user-md mr-4"></i>Find Doctors </p>
-                    <span><i className="fas fa-angle-double-right"></i></span>
-                </div>
-                <div className='banner-menu-item'>
-                    <p className='flex items-center'><i className="fas fa-map-marker-alt mr-4"></i>Find Location </p>
-                    <span><i className="fas fa-angle-double-right"></i></span>
-                </div>
-            </div>
-        </div>
+            <div className='banner-menu '>
+                <HashLink smooth to='#services'>
+                    <div className='banner-menu-item'>
+                        <p className='flex items-center'><i className="fas fa-address-book mr-4"></i>Our Services</p>
+                        <span> <i className="fas fa-angle-double-right"></i></span>
+                    </div>
+                </HashLink>
+                <HashLink smooth to='#clients'>
+                    <div className='banner-menu-item'>
+                        <p className='flex items-center'><i className="fas fa-user mr-4"></i>Happy Clients</p>
+                        <span><i className="fas fa-angle-double-right"></i></span>
+                    </div>
+                </HashLink>
+                <HashLink smooth to='#clients'>
+                    <div className='banner-menu-item'>
+                        <p className='flex items-center'><i className="fas fa-map-marker-alt mr-4"></i>Find Location </p>
+                        <span><i className="fas fa-angle-double-right"></i></span>
+                    </div>
+                </HashLink>
+            </div >
+        </div >
     );
 };
 

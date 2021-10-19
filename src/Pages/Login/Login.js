@@ -30,7 +30,7 @@ const Login = () => {
     }
     const history = useHistory();
     const location = useLocation();
-    const redirectUrl = location.state?.from;
+    const redirectUrl = location.state?.from || '/home';
 
     //   email password registration and login  
 
@@ -45,11 +45,12 @@ const Login = () => {
 
     // google sign in
     const handleGoogleSignIn = () => {
+        setIsLoading(true);
         googleSignIn()
             .then(result => {
+                const user = result.user
                 history.push(redirectUrl)
-                setUser(result.user)
-
+                console.log(result.user);
             })
             .finally(() => {
                 setIsLoading(false)
@@ -102,10 +103,8 @@ const Login = () => {
 
                 <div class="flex justify-between items-center">
 
-                    <button onClick={handleGoogleSignIn} type="button" class="w-1/2 mx-1  p-2 font-bold text-white bg-red-600 rounded focus:outline-none hover:bg-red-800" style={{ fontSize: "12px" }}>Google</button>
-
-                    <button type="button" class="w-1/2 mx-1  p-2 font-bold text-white bg-blue-800 rounded focus:outline-none hover:bg-blue-900" style={{ fontSize: "12px" }}>Github</button>
-
+                    <button onClick={handleGoogleSignIn} type="button" class="w-1/2 m-auto  p-2 font-bold text-white bg-red-600 rounded focus:outline-none hover:bg-red-800" style={{ fontSize: "12px" }}>
+                        <i class="fab fa-google text-white mr-2"></i>Google</button>
 
                 </div>
             </div>

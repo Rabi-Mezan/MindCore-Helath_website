@@ -23,8 +23,8 @@ const Header = () => {
                         <Link to='/contact' className="mr-5 hover:text-gray-900">Contact</Link>
                     </nav>
                     {
-                        user.email ?
-                            <div className='flex items-center'>
+                        user.displayName ?
+                            <div className='flex items-center justify-between'>
                                 <p>{user.displayName}</p>
                                 <button onClick={logOut} className="inline-flex items-center text-yellow-500 bg-gray-100 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base ml-2 mt-4 md:mt-0">
                                     Logout

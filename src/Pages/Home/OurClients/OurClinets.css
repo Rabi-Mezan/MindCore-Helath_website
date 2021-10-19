@@ -1,12 +1,13 @@
 .doctor-page{
-    display: grid;
-    place-content: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .doctors{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    grid-gap: 10px;
+    grid-gap: 5px;
     margin: 20px;
 }
 
@@ -17,8 +18,8 @@
     align-items: center;
 }
 .doctors img{
-    width: 80%;
-    border-radius: 20px;
+    width: 70%;
+    border-radius: 50px;
 }
 
 @media screen and (max-width: 600px){
