@@ -1,0 +1,5 @@
+.location{
+    display: grid;
+   place-content: center;
+}
+

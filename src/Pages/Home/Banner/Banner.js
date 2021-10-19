@@ -25,9 +25,9 @@ const Banner = () => {
                         <span><i className="fas fa-angle-double-right"></i></span>
                     </div>
                 </HashLink>
-                <HashLink smooth to='#clients'>
+                <HashLink smooth to='#location'>
                     <div className='banner-menu-item'>
-                        <p className='flex items-center'><i className="fas fa-map-marker-alt mr-4"></i>Find Location </p>
+                        <p className='flex items-center'><i className="fas fa-map-marker-alt mr-4 "></i>Find Location </p>
                         <span><i className="fas fa-angle-double-right"></i></span>
                     </div>
                 </HashLink>
