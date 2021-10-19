@@ -3,6 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import './App.css';
 import Authprovider from './AuthProvider/Authprovider';
 import Appointment from './Pages/Appointment/Appointment';
+import Contact from './Pages/Contact/Contact';
 import Doctors from './Pages/Doctors/Doctors';
 
 import Footer from './Pages/Home/Footer/Footer';
@@ -43,6 +44,9 @@ function App() {
             <PrivateRoute path='/details/:serviceId'>
               <ServiceDetails></ServiceDetails>
             </PrivateRoute>
+            <Route path='/contact'>
+              <Contact></Contact>
+            </Route>
             <Route exact path='*'>
               <NotFound></NotFound>
             </Route>

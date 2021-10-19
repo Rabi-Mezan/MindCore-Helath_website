@@ -20,7 +20,7 @@ const Header = () => {
                         <Link to='/services' className="mr-5 hover:text-gray-900">Services</Link>
                         <Link to='/doctors' className="mr-5 hover:text-gray-900">Specialist</Link>
                         <Link to='/appointment' className="mr-5 hover:text-gray-900">Appointment</Link>
-                        <Link to='/home' className="mr-5 hover:text-gray-900">Contact</Link>
+                        <Link to='/contact' className="mr-5 hover:text-gray-900">Contact</Link>
                     </nav>
                     {
                         user.email ?
