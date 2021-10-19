@@ -33,11 +33,11 @@ function App() {
             <Route exact path='/doctors'>
               <Doctors></Doctors>
             </Route>
-            <PrivateRoute exact path='/details/:serviceId'>
-              <ServiceDetails></ServiceDetails>
-            </PrivateRoute>
-            <PrivateRoute exact path='/services'>
+            <PrivateRoute path='/services'>
               <Services></Services>
+            </PrivateRoute>
+            <PrivateRoute path='/details/:serviceId'>
+              <ServiceDetails></ServiceDetails>
             </PrivateRoute>
             <Route exact path='*'>
               <NotFound></NotFound>

@@ -4,7 +4,7 @@ import useAuth from '../../hooks/useAuth';
 
 
 const Login = () => {
-    const { user, isLoading, setIsLoading, setUser, googleSignIn, createNewuser, userLogin, setUsername, logOut } = useAuth();
+    const { user, isLoading, setIsLoading, setUser, googleSignIn, createNewuser, userLogin, logOut } = useAuth();
     const [isLogin, setIslogin] = useState(false);
     const [name, setname] = useState('');
     const [email, setEmail] = useState('');

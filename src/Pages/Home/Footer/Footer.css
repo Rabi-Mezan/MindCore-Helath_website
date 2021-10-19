@@ -1,0 +1,26 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    color: white;
+}
+
+.footer div{
+    display: grid;
+    place-content: center;
+}
+
+.footer div li{
+    font-size: 12px;
+    list-style:none;
+    color: white;
+}
+
+.follow-us{
+
+}
+
+.social-icon i{
+    display: flex;
+    font-size: 12px;
+    padding: 3px;
+}

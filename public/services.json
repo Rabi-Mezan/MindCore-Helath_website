@@ -4,7 +4,7 @@
         "name": "Special Care",
         "description": "Good mental health care encompasses a wide range of services beyond simply receiving treatment for a mental health.",
         "price": 300,
-        "img": "https://i.ibb.co/SdRPKTj/close-up-doctor-kid-wearing-masks-1.jpg"
+        "img": "https://i.ibb.co/rxbmrN2/special-care.jpg"
     },
     {
         "id": 2,
@@ -18,42 +18,42 @@
         "name": "Young Mental Care",
         "description": "Psychologists are mental health professionals that hold a Ph.D. in psychology. They may use the title doctor but are not.",
         "price": 350,
-        "img": "https://i.ibb.co/SdRPKTj/close-up-doctor-kid-wearing-masks-1.jpg"
+        "img": "https://i.ibb.co/V2ML92Z/young-care.jpg"
     },
     {
         "id": 4,
         "name": "Older Mental Care",
         "description": "These mental health professionals typically have master’s degrees in psychology and provide therapy for mental health.",
         "price": 330,
-        "img": "https://i.ibb.co/SdRPKTj/close-up-doctor-kid-wearing-masks-1.jpg"
+        "img": "https://i.ibb.co/1RQ9XZQ/old-care.jpg"
     },
     {
         "id": 5,
         "name": "COVID-19 Vaccination",
         "description": "Good mental health care encompasses a wide range of services beyond simply receiving treatment for a mental .",
         "price": 100,
-        "img": "https://i.ibb.co/SdRPKTj/close-up-doctor-kid-wearing-masks-1.jpg"
+        "img": "https://i.ibb.co/m57yDZc/covid.jpg"
     },
     {
         "id": 6,
         "name": "Meditation Center",
         "description": "Residential facilities dedicated to mental health care provide intensive treatment in a safe setting for weeks or months.. ",
         "price": 320,
-        "img": "https://i.ibb.co/SdRPKTj/close-up-doctor-kid-wearing-masks-1.jpg"
+        "img": "https://i.ibb.co/Tkz2S9z/ksenia-makagonova-V-TIPBo-C-2-M-unsplash.jpg"
     },
     {
         "id": 7,
         "name": "Specialist mental health services",
         "description": "Residential facilities dedicated to mental health care provide intensive treatment in a safe setting for weeks or months.. ",
         "price": 500,
-        "img": "https://i.ibb.co/SdRPKTj/close-up-doctor-kid-wearing-masks-1.jpg"
+        "img": "https://i.ibb.co/jTmvHpJ/specialist.jpg"
     },
     {
         "id": 8,
         "name": "Partial Hospitalization",
         "description": "Residential facilities dedicated to mental health care provide intensive treatment in a safe setting for weeks or months.. ",
         "price": 150,
-        "img": "https://i.ibb.co/SdRPKTj/close-up-doctor-kid-wearing-masks-1.jpg"
+        "img": "https://i.ibb.co/Qp3HS2H/hospital.jpg"
     },
     {
         "id": 9,
@@ -67,6 +67,6 @@
         "name": "Private Service",
         "description": "Residential facilities dedicated to mental health care provide intensive treatment in a safe setting for weeks or months.. ",
         "price": 420,
-        "img": "https://i.ibb.co/SdRPKTj/close-up-doctor-kid-wearing-masks-1.jpg"
+        "img": "https://i.ibb.co/vcKszsg/tim-mossholder-0z-Rt0b-Qys-Mw-unsplash.jpg"
     }
 ]

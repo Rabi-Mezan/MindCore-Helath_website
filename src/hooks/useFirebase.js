@@ -1,4 +1,4 @@
-import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile, sendEmailVerification, signOut } from "firebase/auth";
+import { getAuth, signInWithPopup, GoogleAuthProvider, onAuthStateChanged, createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile, signOut } from "firebase/auth";
 import { useEffect, useState } from "react";
 
 import initAuth from "../firebase/firebase.init"
@@ -23,7 +23,6 @@ const useFirebase = () => {
             .then(result => {
                 console.log(result.user);
                 setUsername(name);
-                verifyEmail(result.user);
             })
             .catch(error => {
                 setError(error.message)
@@ -47,12 +46,6 @@ const useFirebase = () => {
             .then(result => { })
     }
 
-    const verifyEmail = () => {
-        sendEmailVerification(auth.currentUser)
-            .then(result => {
-
-            })
-    }
 
     // sign in using google
     const googleSignIn = () => {

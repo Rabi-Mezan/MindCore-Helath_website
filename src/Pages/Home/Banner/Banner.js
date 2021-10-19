@@ -6,7 +6,7 @@ const Banner = () => {
     return (
         <div className='banner '>
             <div className='w-3/4 banner-text'>
-                <h1 className='text-4xl mb-2 font-black'>WE NEED TO TALK BECAUSE<br /> WE CARE
+                <h1 className='lg:text-5xl mb-2 font-black'>WE NEED TO TALK BECAUSE<br /> WE CARE
                     YOUR MENTAL HEALTH</h1>
                 <p className='text-xs'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad reiciendis rerum recusandae minima debitis hic nulla tempora, saepe totam nihil.</p>
             </div>
