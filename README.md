@@ -1,9 +1,17 @@
 # MindCore
  MindCore is a mental health care related website.Here people who are suffering from mental illness can find doctors and other supports for their problem's solution.
 
+ Features...
+ 1.MindCore Offer mental support for mentally ill people
+ 2.It also offers various kind of services related to mental health care
+3.MindCore has Special Service system 
+4. You can register and login in this website using email password or google account
+5. You can visit protected routes of this website only after loging in
+
 This project was bootstrapped with [Create React App](https://mindcore-1f680.web.app).
 
-## Available Scripts
+
+
 
 In the project directory, you can run:
 
