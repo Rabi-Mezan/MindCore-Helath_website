@@ -25,6 +25,7 @@ const Footer = () => {
                     <p className='flex text-xs items-center'> <i className="fab fa-youtube mr-2"></i>Youtube</p>
                 </div>
             </div>
+            <p>Copyritght:</p>
         </div>
     );
 };

@@ -1,0 +1,8 @@
+.appointment{
+    background-image: url('../../images/PPOINT.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    place-content: center;
+}

@@ -1,0 +1,23 @@
+.doctor-page{
+    display: grid;
+    place-content: center;
+}
+
+.doctors{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 10px;
+    margin: 20px;
+}
+.doctors img{
+    width: 80%;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 600px){
+    .doctors{
+       display: flex;
+       flex-direction: column;
+    }
+   
+}
