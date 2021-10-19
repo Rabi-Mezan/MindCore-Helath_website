@@ -3,3 +3,10 @@
     place-content: center;
     border: 1px solid gray;
 }
+
+
+@media screen and (max-width: 600px){
+    .details{
+        text-align: center;
+    }
+}

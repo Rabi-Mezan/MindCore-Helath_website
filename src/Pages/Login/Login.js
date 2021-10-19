@@ -72,10 +72,7 @@ const Login = () => {
 
                     <input onChange={handlePassword} type="password" name="userpass" class="block border p-2 bg-white w-full h-10 focus:outline-none focus:border-blue-400 rounded text-sm placeholder-gray-600 placeholder-opacity-40 mt-2 text-gray-600" placeholder="Password*" />
 
-                    {
-                        !isLogin &&
-                        <input type="password" name="confirmpass" class="block border p-2 bg-white w-full h-10 focus:outline-none focus:border-blue-400 rounded text-sm placeholder-gray-600 placeholder-opacity-40 mt-2 text-gray-600" placeholder="Confirm password*" />
-                    }
+
 
                     <div class="flex justify-center">
 

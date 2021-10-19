@@ -16,10 +16,7 @@
     place-content: center;
     font-family: 'Poppins', sans-serif;
 }
-.banner-text h1{
-    color: #ffa700;
-    /* font-weight: 900; */
-}
+
 .banner-menu{
     display: flex;
     flex-direction: column;
@@ -44,7 +41,7 @@
 }
 
 .banner-menu-item p>i{
-    background-color: 	#ffa700;
+    background-color: 	#eea00f;
     padding: 10px;
     border-radius: 25px;
 }

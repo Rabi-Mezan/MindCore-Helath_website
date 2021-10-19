@@ -35,7 +35,7 @@ const useFirebase = () => {
                 console.log(result.user)
             })
             .catch(error => {
-                setError(error.message)
+                setError(alert('enter valid email and password'))
             })
     }
 

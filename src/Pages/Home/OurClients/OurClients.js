@@ -1,7 +1,4 @@
 import React from 'react';
-import doc1 from '../../../images/humberto-chavez-FVh_yqLR9eA-unsplash.jpg'
-import doc2 from '../../../images/sammy-williams-38Un6Oi5beE-unsplash.jpg'
-import doc3 from '../../../images/usman-yousaf-pTrhfmj2jDA-unsplash.jpg'
 import './OurClinets.css'
 
 const OurClients = () => {

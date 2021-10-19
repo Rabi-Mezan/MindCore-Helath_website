@@ -7,9 +7,9 @@ const Banner = () => {
     return (
         <div className='banner '>
             <div className='w-3/4 banner-text'>
-                <h1 className='lg:text-5xl mb-2 font-black'>WE NEED TO TALK BECAUSE<br /> WE CARE
+                <h1 className='lg:text-5xl text-3xl mb-2 text-white font-black'>WE NEED TO TALK BECAUSE<br /> WE CARE
                     YOUR MENTAL HEALTH</h1>
-                <p className='text-xs'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad reiciendis rerum recusandae minima debitis hic nulla tempora, saepe totam nihil.</p>
+                <p className='text-xs'>Together, we can realize our shared vision of a nation where anyone affected by mental illness can get the appropriate support and quality of care to live healthy, fulfilling lives — a nation where no one feels alone in their struggle..</p>
             </div>
 
             <div className='banner-menu '>
