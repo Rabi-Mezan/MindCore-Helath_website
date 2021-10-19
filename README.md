@@ -1,6 +1,7 @@
-# Getting Started with Create React App
+# MindCore
+ MindCore is a mental health care related website.Here people who are suffering from mental illness can find doctors and other supports for their problem's solution.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://mindcore-1f680.web.app).
 
 ## Available Scripts
 

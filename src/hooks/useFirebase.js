@@ -49,6 +49,7 @@ const useFirebase = () => {
 
     // sign in using google
     const googleSignIn = () => {
+        setIsLoading(true);
         return signInWithPopup(auth, googleProvider)
 
     }

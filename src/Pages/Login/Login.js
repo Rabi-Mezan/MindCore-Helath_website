@@ -45,7 +45,6 @@ const Login = () => {
 
     // google sign in
     const handleGoogleSignIn = () => {
-        setIsLoading(true);
         googleSignIn()
             .then(result => {
                 const user = result.user

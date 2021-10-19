@@ -20,7 +20,7 @@ const ServiceDetails = () => {
     }, [service])
     return (
         <div className='details m-12 p-4'>
-            <div className='flex items-center '>
+            <div className='lg:flex items-center '>
                 <img className='w-96 p-10 rounded-md' src={serviceDetails?.img} alt="" />
                 <div>
                     <h1 className='text-3xl font-bold text-gray-500 mb-3'>{serviceDetails?.name}</h1>
@@ -29,7 +29,10 @@ const ServiceDetails = () => {
                     <p className='text-sm'>{serviceDetails?.description} <br />
                         While mental health has long been regarded as less important than physical health and has been stigmatized, this is changing. It is being recognized as a crucial part of overall well-being. Good mental health care is also increasingly recognized as important for prevention, treatment, and management of mental health conditions. However, finding good mental health care can still be challenging because of lack of awareness, stigma, and other reasons.
                     </p>
-                    <h3 className='text-2xl mt-4'>Price : <span className='font-bold text-yellow-500'>${serviceDetails?.price}</span></h3>
+                    <div className='flex items-center'>
+                        <h3 className='text-2xl mt-4'>Price : <span className='font-bold text-yellow-500'>${serviceDetails?.price}</span></h3>
+                        <button className='inline bg-green-500 ml-5 mt-5 py-1 text-white text-sm px-2'>Join Now</button>
+                    </div>
 
                 </div>
             </div>

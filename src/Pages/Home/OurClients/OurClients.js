@@ -7,7 +7,7 @@ import './OurClinets.css'
 const OurClients = () => {
     return (
         <div id='clients' className='doctor-page'>
-            <h1 className='lg:text-3xl text-center font-bold text-gray-500 mt-12 mb-10'>Our Happy Clients</h1>
+            <h1 className='lg:text-3xl text-center font-bold text-gray-500 m-12'>Our Happy Clients</h1>
 
             <div className='doctors'>
                 <div className='mb-10'>
