@@ -8,7 +8,7 @@
 4. You can register and login in this website using email password or google account
 5. You can visit protected routes of this website only after loging in
 
-This project was bootstrapped with [Create React App](https://mindcore-1f680.web.app).
+Visit here to see live preview (https://mindcore-1f680.web.app).
 
 
 
